@@ -1,0 +1,27 @@
+@use '../globals/typography' as *;
+
+.intro-bg {
+  background: url('../../images/homepage/hero-bg-desktop.jpg') no-repeat top
+    right;
+  background-size: cover;
+
+  .intro {
+    padding-top: 60px;
+    padding-bottom: 240px;
+
+    &__logo {
+      display: inline-block;
+      margin-bottom: 120px;
+    }
+
+    & h1 {
+      padding-bottom: 40px;
+      max-width: 14ch;
+    }
+
+    & p {
+      @include paragraph(var(--color-white));
+      padding-bottom: 40px;
+    }
+  }
+}
