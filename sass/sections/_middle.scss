@@ -1,0 +1,68 @@
+@use '../globals/typography' as *;
+
+.middle-bg {
+  background-color: var(--color-white);
+  background-image: url('../../images/patterns/pattern-curve-top-right.svg'),
+    url('../../images/patterns/pattern-curve-top-left.svg');
+  background-repeat: no-repeat;
+  background-position-y: 248px, bottom;
+  background-position-x: left, right;
+}
+
+.middle {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    &--enjoyable .middle__image {
+      position: relative;
+      top: -80px;
+    }
+
+    &--locally {
+      flex-direction: row-reverse;
+      position: relative;
+      bottom: -80px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        background: url('../../images/patterns/pattern-lines.svg') no-repeat
+          center center;
+        width: 160px;
+        height: 76px;
+        top: 268px;
+        right: -120px;
+      }
+    }
+  }
+
+  &__text {
+    & h2 {
+      @include h2(var(--color-mirage));
+      max-width: 14ch;
+      margin-bottom: 42px;
+    }
+
+    & p {
+      @include paragraph(var(--color-cod-gray));
+    }
+
+    &::before {
+      display: block;
+      content: '';
+      position: relative;
+      background: url('../../images/patterns/pattern-divide.svg') no-repeat
+        center center;
+      width: 71px;
+      height: 7px;
+      top: -60px;
+    }
+  }
+
+  &__image {
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+  }
+}
