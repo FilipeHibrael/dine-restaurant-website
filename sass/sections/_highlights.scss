@@ -1,0 +1,80 @@
+@use '../globals/typography' as *;
+
+.highlights {
+  display: flex;
+  margin-top: 200px;
+  margin-bottom: 120px;
+  gap: 40px;
+
+  &__text {
+    h2 {
+      @include h2(var(--color-white));
+      max-width: 18ch;
+      margin-bottom: 32px;
+    }
+
+    p {
+      @include paragraph(var(--color-white));
+      font-weight: var(--weight-light);
+    }
+
+    &::before {
+      display: block;
+      content: '';
+      position: relative;
+      background: url('../../images/patterns/pattern-divide.svg') no-repeat
+        center center;
+      width: 71px;
+      height: 7px;
+      top: -60px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      gap: 64px;
+      padding: 32px 0;
+
+      &__image::after {
+        display: block;
+        content: '';
+        background: #9e7f66;
+        width: 32px;
+        height: 1px;
+        position: relative;
+        top: -76px;
+        right: -127px;
+      }
+
+      &__description {
+        h3 {
+          @include h3(var(--color-white));
+          margin-bottom: 8px;
+        }
+
+        p {
+          @include paragraph(var(--color-white));
+          font-weight: var(--weight-light);
+          font-size: 1rem;
+        }
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    .menu-item + .menu-item {
+      border-top: 1px solid #9e7f662a;
+    }
+  }
+}

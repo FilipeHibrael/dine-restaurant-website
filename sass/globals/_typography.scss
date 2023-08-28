@@ -19,6 +19,13 @@ h1 {
   color: $color;
 }
 
+@mixin h3($color) {
+  font-weight: var(--weight-bold);
+  font-size: 1.2rem;
+  line-height: 1.1;
+  color: $color;
+}
+
 @mixin paragraph($color) {
   font-weight: var(--weight-regular);
   font-size: 1.4rem;
