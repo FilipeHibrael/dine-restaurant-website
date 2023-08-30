@@ -1,0 +1,18 @@
+@use '../globals/typography' as *;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 180px 80px 40px;
+  gap: 48px;
+
+  &__contact,
+  &__open-times {
+    font-weight: var(--weight-regular);
+    font-size: 1rem;
+    line-height: 2;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+}
