@@ -7,7 +7,8 @@
 }
 
 //Button
-.button {
+.button,
+%button {
   display: inline-block;
   font-size: 1.2rem;
   letter-spacing: 0.06rem;
@@ -20,5 +21,22 @@
   &:hover {
     background: var(--color-white);
     color: var(--color-cod-gray);
+  }
+
+  &--dark {
+    @extend %button;
+    background: var(--color-cod-gray);
+    border-color: var(--color-cod-gray);
+  }
+}
+
+//Animation
+@keyframes show {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
   }
 }
