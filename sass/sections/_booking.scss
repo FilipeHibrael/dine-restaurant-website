@@ -1,0 +1,65 @@
+@use '../globals/typography' as *;
+
+.booking-bg {
+  background: url('../../images/booking/hero-bg-desktop.jpg');
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+
+.booking-bg2 {
+  display: block;
+  background: var(--color-white)
+    url('../../images/patterns/pattern-curve-bottom-right.svg');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 240px;
+  position: relative;
+  z-index: -2;
+}
+
+.booking {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  &__content {
+    a {
+      display: block;
+      width: max-content;
+      margin-bottom: 160px;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+    }
+
+    p {
+      @include paragraph(var(--color-white));
+      font-weight: var(--weight-light);
+      margin-bottom: 200px;
+    }
+  }
+
+  &__form {
+    background: #fff;
+    height: 520px;
+    width: 540px;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 200px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: url('../../images/patterns/pattern-lines.svg') no-repeat
+        center center;
+      width: 160px;
+      height: 76px;
+      bottom: -38px;
+      left: -92px;
+      z-index: -1;
+    }
+  }
+}
