@@ -30,7 +30,7 @@
   }
 }
 
-//Animation
+//Animations
 @keyframes show {
   from {
     opacity: 0.5;
@@ -38,5 +38,15 @@
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes show-bottom {
+  from {
+    transform: translateY(-40px);
+  }
+
+  to {
+    transform: translateY(0px); 
   }
 }

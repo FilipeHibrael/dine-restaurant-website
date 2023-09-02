@@ -42,10 +42,11 @@
     }
   }
 
-  &__form {
+  &__form-container {
     background: #fff;
-    height: 520px;
+    height: 540px;
     width: 540px;
+    padding: 40px;
     box-shadow: 0 0 200px rgba(0, 0, 0, 0.2);
     position: relative;
     top: 200px;
@@ -60,6 +61,146 @@
       bottom: -38px;
       left: -92px;
       z-index: -1;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    &,
+    input {
+      font-family: 'League Spartan', sans-serif;
+      font-size: 1.4rem;
+      font-weight: var(--weight-light);
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid var(--color-cod-gray);
+      opacity: 0.3;
+      transition: opacity 0.4s;
+
+      &::placeholder {
+        color: var(--color-cod-gray);
+      }
+
+      &:focus {
+        opacity: 1;
+        outline: none;
+      }
+    }
+
+    &__date,
+    &__time {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      white-space: nowrap;
+
+      .date__inputs,
+      .time__inputs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+    }
+
+    .meridiem {
+      border-bottom: 1px solid var(--color-cod-gray);
+      padding: 12px;
+      cursor: pointer;
+      position: relative;
+      opacity: 0.3;
+      transition: opacity 0.4s;
+
+      &:hover,
+      &:has(.open) {
+        opacity: 1;
+      }
+
+      &__icon svg {
+        transition: transform 0.4s;
+        margin-left: 8px;
+      }
+
+      &__toggle.open {
+        .meridiem__icon svg {
+          transform: rotate(180deg);
+        }
+      }
+
+      &__dropdown {
+        display: none;
+        position: absolute;
+        text-align: right;
+        background: var(--color-white);
+        width: 100%;
+        padding: 12px;
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        left: 0px;
+        bottom: -102px;
+        z-index: 1;
+
+        &.open {
+          display: block;
+          animation: show-bottom 0.4s;
+        }
+
+        .button-meridiem {
+          display: block;
+          padding: 8px;
+        }
+
+        .button-meridiem::before {
+          visibility: hidden;
+          content: url('../../images/icons/icon-check.svg');
+          position: relative;
+          left: -16px;
+          bottom: 2px;
+        }
+
+        .button-meridiem.active::before {
+          visibility: visible;
+        }
+      }
+    }
+
+    .screen-reader {
+      visibility: hidden;
+      position: absolute;
+    }
+
+    &__peoples {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+        transform: scale(1.8);
+        transition: transform 0.2s;
+
+        &:hover {
+          transform: scale(2.4);
+        }
+      }
+
+      .people-aria-text {
+        font-weight: var(--weight-bold);
+      }
     }
   }
 }

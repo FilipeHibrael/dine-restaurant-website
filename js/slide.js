@@ -28,6 +28,8 @@ export default class Slide {
   }
 
   init() {
-    this.changeContentLoop();
+    if(this.slideImages.length) {
+      this.changeContentLoop();
+    }
   }
 }
