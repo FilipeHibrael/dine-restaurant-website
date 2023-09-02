@@ -1,3 +1,5 @@
+@use 'util' as *;
+
 :root {
   --weight-light: 300;
   --weight-regular: 400;
@@ -10,6 +12,10 @@ h1 {
   font-size: 4.8rem;
   line-height: 1.1;
   color: var(--color-white);
+
+  @include breakpoit(large) {
+    font-size: 4rem;
+  }
 }
 
 @mixin h2($color) {

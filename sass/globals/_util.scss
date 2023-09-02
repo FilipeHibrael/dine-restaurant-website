@@ -50,3 +50,14 @@
     transform: translateY(0px); 
   }
 }
+
+//Breakpoits
+$breakpoits: (
+  'large': 1200px
+);
+
+@mixin breakpoit($Size) {
+  @media (max-width: map-get($breakpoits, $Size)) {
+    @content
+  }
+}

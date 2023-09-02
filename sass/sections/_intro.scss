@@ -1,4 +1,5 @@
 @use '../globals/typography' as *;
+@use '../globals/util' as *;
 
 .intro-bg {
   background: url('../../images/homepage/hero-bg-desktop.jpg') no-repeat top
@@ -6,6 +7,9 @@
   background-size: cover;
 
   .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     padding-top: 60px;
     padding-bottom: 240px;
 
@@ -22,6 +26,27 @@
     & p {
       @include paragraph(var(--color-white));
       padding-bottom: 40px;
+    }
+  }
+}
+
+@include breakpoit(large) {
+  .intro-bg {
+    background: url('../../images/homepage/hero-bg-tablet.jpg') no-repeat top center;
+
+    .intro {
+      text-align: center;
+      align-items: center;
+      padding-top:360px ;
+      padding-bottom: 140px;
+
+      &__logo {
+        margin-bottom: 36px;
+      }
+
+      & h1 {
+        padding-bottom: 20px;
+      }
     }
   }
 }
