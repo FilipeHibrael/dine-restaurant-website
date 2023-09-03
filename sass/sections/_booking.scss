@@ -1,4 +1,5 @@
 @use '../globals/typography' as *;
+@use '../globals/util' as *;
 
 .booking-bg {
   background: url('../../images/booking/hero-bg-desktop.jpg');
@@ -201,6 +202,46 @@
       .people-aria-text {
         font-weight: var(--weight-bold);
       }
+    }
+  }
+}
+
+@include breakpoit(large) {
+  .booking-bg {
+    background-image: url('../../images/booking/hero-bg-tablet.jpg');
+    height: 600px;
+  }
+
+  .booking-bg2 {
+    height: 380px;
+    background-position-x: -420px;
+  }
+
+  .booking {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+
+    &__content {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 60px;
+
+      a {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+      }
+
+      p {
+        margin: 0 auto;
+      }
+    }
+
+    &__form-container {
+      top: 60px;
     }
   }
 }
