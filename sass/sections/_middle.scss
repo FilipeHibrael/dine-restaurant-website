@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    
+
     & h2 {
       @include h2(var(--color-mirage));
       max-width: 14ch;
@@ -81,11 +81,11 @@
     flex-direction: column;
 
     &--locally {
-        bottom: 0px;
+      bottom: 0px;
 
-        .middle__image {
-          margin-bottom: 80px;
-        }
+      .middle__image {
+        margin-bottom: 80px;
+      }
     }
   }
 
@@ -111,5 +111,37 @@
       object-fit: cover;
       object-position: top;
     }
+  }
+}
+
+@include breakpoit(medium) {
+  .middle-bg {
+    background-position-x: -600px, 200px;
+  }
+
+  .middle__content {
+    gap: 0px;
+
+    &--locally::after {
+      display: none;
+    }
+  }
+
+  .middle__text {
+    h2 {
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 36px;
+    }
+
+    &::before {
+      top: -32px;
+    }
+  }
+
+  .middle__image img {
+    height: 260px;
   }
 }

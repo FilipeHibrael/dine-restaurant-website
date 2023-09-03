@@ -245,3 +245,31 @@
     }
   }
 }
+
+@include breakpoit(medium) {
+  .booking {
+    &__form-container {
+      width: 90vw;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__content a {
+      left: calc(50% - 48px);
+    }
+  }
+
+  .form__date,
+  .form__time {
+    flex-direction: column;
+    align-items: start !important;
+    gap: 12px !important;
+  }
+
+  .form__button {
+    font-size: 1rem;
+    padding: 20px 40px;
+  }
+}

@@ -53,7 +53,8 @@
 
 //Breakpoits
 $breakpoits: (
-  'large': 1200px
+  'large': 1200px,
+  'medium': 620px
 );
 
 @mixin breakpoit($Size) {

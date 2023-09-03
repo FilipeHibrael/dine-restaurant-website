@@ -34,3 +34,11 @@
     padding-bottom: 60px;
   }
 }
+
+@include breakpoit(medium) {
+  .call-to-action {
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

@@ -50,3 +50,14 @@
     }
   }
 }
+
+@include breakpoit(medium) {
+  .intro-bg {
+    background: url('../../images/homepage/hero-bg-mobile.jpg') no-repeat top center;
+
+    .intro {
+      padding-top:220px ;
+      padding-bottom: 140px;
+    }
+  }
+}

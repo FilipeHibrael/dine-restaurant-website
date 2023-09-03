@@ -119,3 +119,25 @@
     }
   }
 }
+
+@include breakpoit(medium) {
+  .slide {
+    padding-top: 60px;
+
+    &__wrapper::before {
+      display: none;
+    }
+
+    &__button {
+      margin-bottom: 20px;
+    }
+
+    &__labels {
+      top: -400px;
+    }
+
+    &__label::before {
+      top: 40px;
+    }
+  }
+}

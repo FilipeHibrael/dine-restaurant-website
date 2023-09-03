@@ -16,6 +16,10 @@ h1 {
   @include breakpoit(large) {
     font-size: 4rem;
   }
+
+  @include breakpoit(medium) {
+    font-size: 3rem;
+  }
 }
 
 @mixin h2($color) {
@@ -23,6 +27,10 @@ h1 {
   font-size: 3.2rem;
   line-height: 1.1;
   color: $color;
+
+  @include breakpoit(medium) {
+    font-size: 2.6rem;
+  }
 }
 
 @mixin h3($color) {
@@ -38,4 +46,8 @@ h1 {
   line-height: 1.4;
   color: $color;
   max-width: 38ch;
+
+  @include breakpoit(medium) {
+    font-size: 1.2rem;
+  }
 }

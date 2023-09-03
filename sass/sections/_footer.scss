@@ -23,3 +23,9 @@
     padding-right: 40px;
   }
 }
+
+@include breakpoit(medium) {
+  .footer {
+    flex-direction: column;
+  }
+}
