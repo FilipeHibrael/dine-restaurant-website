@@ -1,4 +1,5 @@
 @use '../globals/typography' as *;
+@use '../globals/util' as *;
 
 .footer {
   display: flex;
@@ -14,5 +15,11 @@
     letter-spacing: 0.08rem;
     text-transform: uppercase;
     color: var(--color-white);
+  }
+}
+
+@include breakpoit(large) {
+  .footer {
+    padding-right: 40px;
   }
 }
