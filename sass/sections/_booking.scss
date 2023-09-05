@@ -247,6 +247,10 @@
 }
 
 @include breakpoit(medium) {
+  .booking-bg {
+    background-image: url('../../images/booking/hero-bg-mobile.jpg');
+  }
+
   .booking {
     &__form-container {
       width: 90vw;

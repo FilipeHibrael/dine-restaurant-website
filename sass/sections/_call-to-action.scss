@@ -36,6 +36,10 @@
 }
 
 @include breakpoit(medium) {
+  .call-to-action-bg {
+    background-image: url('../../images/homepage/ready-bg-mobile.jpg');
+  }
+
   .call-to-action {
     gap: 20px;
     padding-top: 40px;
