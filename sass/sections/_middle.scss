@@ -3,8 +3,8 @@
 
 .middle-bg {
   background-color: var(--color-white);
-  background-image: url('../../images/patterns/pattern-curve-top-right.svg'),
-    url('../../images/patterns/pattern-curve-top-left.svg');
+  background-image: url('.././images/patterns/pattern-curve-top-right.svg'),
+    url('.././images/patterns/pattern-curve-top-left.svg');
   background-repeat: no-repeat;
   background-position-y: 248px, bottom;
   background-position-x: left, right;
@@ -30,7 +30,7 @@
       &::after {
         content: '';
         position: absolute;
-        background: url('../../images/patterns/pattern-lines.svg') no-repeat
+        background: url('.././images/patterns/pattern-lines.svg') no-repeat
           center center;
         width: 160px;
         height: 76px;
@@ -59,7 +59,7 @@
       display: block;
       content: '';
       position: relative;
-      background: url('../../images/patterns/pattern-divide.svg') no-repeat
+      background: url('.././images/patterns/pattern-divide.svg') no-repeat
         center center;
       width: 71px;
       height: 7px;

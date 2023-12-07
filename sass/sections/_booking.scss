@@ -2,7 +2,7 @@
 @use '../globals/util' as *;
 
 .booking-bg {
-  background: url('../../images/booking/hero-bg-desktop.jpg');
+  background: url('.././images/booking/hero-bg-desktop.jpg');
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
@@ -11,7 +11,7 @@
 .booking-bg2 {
   display: block;
   background: var(--color-white)
-    url('../../images/patterns/pattern-curve-bottom-right.svg');
+    url('.././images/patterns/pattern-curve-bottom-right.svg');
   background-repeat: no-repeat;
   background-position: left bottom;
   height: 240px;
@@ -55,8 +55,8 @@
     &::before {
       content: '';
       position: absolute;
-      background: url('../../images/patterns/pattern-lines.svg') no-repeat
-        center center;
+      background: url('.././images/patterns/pattern-lines.svg') no-repeat center
+        center;
       width: 160px;
       height: 76px;
       bottom: -38px;
@@ -160,7 +160,7 @@
 
         .button-meridiem::before {
           visibility: hidden;
-          content: url('../../images/icons/icon-check.svg');
+          content: url('.././images/icons/icon-check.svg');
           position: relative;
           left: -16px;
           bottom: 2px;
@@ -208,7 +208,7 @@
 
 @include breakpoit(large) {
   .booking-bg {
-    background-image: url('../../images/booking/hero-bg-tablet.jpg');
+    background-image: url('.././images/booking/hero-bg-tablet.jpg');
     height: 600px;
   }
 
@@ -248,7 +248,7 @@
 
 @include breakpoit(medium) {
   .booking-bg {
-    background-image: url('../../images/booking/hero-bg-mobile.jpg');
+    background-image: url('.././images/booking/hero-bg-mobile.jpg');
   }
 
   .booking {

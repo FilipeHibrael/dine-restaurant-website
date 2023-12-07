@@ -3,7 +3,7 @@
 
 .slide-bg {
   background: var(--color-white)
-    url('../../images/patterns/pattern-curve-top-right.svg');
+    url('.././images/patterns/pattern-curve-top-right.svg');
   background-repeat: no-repeat;
   background-position: top left;
   background-position-x: -320px;
@@ -23,7 +23,7 @@
     &::before {
       content: '';
       position: absolute;
-      background: url('../../images/patterns/pattern-lines.svg');
+      background: url('.././images/patterns/pattern-lines.svg');
       width: 160px;
       height: 76px;
       top: -38px;

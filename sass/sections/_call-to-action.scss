@@ -2,7 +2,7 @@
 @use '../globals/util' as *;
 
 .call-to-action-bg {
-  background: url('../../images/homepage/ready-bg-desktop.jpg');
+  background: url('.././images/homepage/ready-bg-desktop.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -23,7 +23,7 @@
 
 @include breakpoit(large) {
   .call-to-action-bg {
-    background-image: url('../../images/homepage/ready-bg-tablet.jpg');
+    background-image: url('.././images/homepage/ready-bg-tablet.jpg');
   }
 
   .call-to-action {
@@ -37,7 +37,7 @@
 
 @include breakpoit(medium) {
   .call-to-action-bg {
-    background-image: url('../../images/homepage/ready-bg-mobile.jpg');
+    background-image: url('.././images/homepage/ready-bg-mobile.jpg');
   }
 
   .call-to-action {

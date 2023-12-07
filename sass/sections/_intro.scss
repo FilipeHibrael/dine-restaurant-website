@@ -2,7 +2,7 @@
 @use '../globals/util' as *;
 
 .intro-bg {
-  background: url('../../images/homepage/hero-bg-desktop.jpg') no-repeat top
+  background: url('.././images/homepage/hero-bg-desktop.jpg') no-repeat top
     right;
   background-size: cover;
 
@@ -32,12 +32,13 @@
 
 @include breakpoit(large) {
   .intro-bg {
-    background: url('../../images/homepage/hero-bg-tablet.jpg') no-repeat top center;
+    background: url('.././images/homepage/hero-bg-tablet.jpg') no-repeat top
+      center;
 
     .intro {
       text-align: center;
       align-items: center;
-      padding-top:360px ;
+      padding-top: 360px;
       padding-bottom: 140px;
 
       &__logo {
@@ -53,10 +54,11 @@
 
 @include breakpoit(medium) {
   .intro-bg {
-    background: url('../../images/homepage/hero-bg-mobile.jpg') no-repeat top center;
+    background: url('.././images/homepage/hero-bg-mobile.jpg') no-repeat top
+      center;
 
     .intro {
-      padding-top:220px ;
+      padding-top: 220px;
       padding-bottom: 140px;
     }
   }
