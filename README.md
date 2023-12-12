@@ -1,14 +1,12 @@
 # Dine Restaurant 🍕
 
-<img src="./images/projeto-banner.jpg" alt="Banner do projeto"/>
 Acesse o projeto clicando [aqui](https://filipehibrael.github.io/dine-restaurant-website/)
+
+<img src="./images/projeto-banner.jpg" alt="Banner do projeto"/>
 
 ## 📱 Layout Mobile
 
-<div style="display: flex; justify-content: space-between;">
-  <img src="./images/projeto-banner-mobile-1.jpg" alt="Banner 1 do projeto mobile"/>
-  <img src="./images/projeto-banner-mobile2.jpg" alt="Banner 2 do projeto mobile"/>
-</div>
+<img src="./images/projeto-banner-mobile.png" alt="Banner do projeto"/>
 
 ## 📖 Sobre
 
